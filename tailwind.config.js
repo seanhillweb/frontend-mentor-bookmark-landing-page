@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         brand: {
           "soft-blue": "#5368df",
-          "soft-red": "fa5757",
+          "soft-red": "#fa5757",
           "grey-blue": "#9194a1",
           "dark-blue": "#252b46"
         },
