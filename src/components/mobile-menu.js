@@ -1,11 +1,6 @@
 "use client"
 
 import { Menu } from "@headlessui/react";
-import Image from "next/image";
-import Link from "next/link";
-import iconHamburger from "@/public/icon-hamburger.svg";
-import iconClose from "@/public/icon-close.svg";
-
 import { menu } from "@/data/data";
 
 export default function MobileMenu() {

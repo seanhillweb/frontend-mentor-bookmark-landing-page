@@ -21,3 +21,22 @@ body {
   background: rgb(var(--background-rgb));
   font-size: var(--font-size);
 }
+
+.graphic img {
+  z-index: 10;
+  @apply relative;
+}
+
+.graphic::after {
+  content: "";
+  z-index: 0;
+  @apply absolute;
+  @apply top-20;
+  @apply left-32;
+  @apply bottom-0;
+  @apply block;
+  @apply bg-brand-soft-blue;
+  @apply w-screen;
+  @apply h-auto;
+  @apply rounded-s-full;
+}

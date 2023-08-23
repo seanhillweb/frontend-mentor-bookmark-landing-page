@@ -2,14 +2,16 @@
 
 import React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
+import Button from "@/components/button";
 
-const AccordionItem = ({ label, children, ...props }) => {
+const AccordionItem = ({ className="", label, children }) => {
   return (
-    <Disclosure as="div" className="w-full" {...props}>
+    <Disclosure as="div" className={`w-full ${className}`}>
       {({ open }) => (
         <>
-          <Disclosure.Button className="w-full py-4 border-t border-brand-grey-blue text-left hover:text-brand-soft-red focus:text-brand-soft-red ">
+          <Disclosure.Button className="w-full py-4 border-t border-brand-grey-blue/25 text-left hover:text-brand-soft-red focus:text-brand-soft-red ">
             {label}
+            {/* TODO: Add icon here, look into SVGR support */}
           </Disclosure.Button>
           <Transition
             show={open}
@@ -49,7 +51,6 @@ export default function FAQ() {
               you&apos;d like answered please feel free to email us.
             </p>
           </div>
-
           <AccordionItem label="What is Bookmark?">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -75,13 +76,16 @@ export default function FAQ() {
               sollicitudin ex et ultricies bibendum.
             </p>
           </AccordionItem>
-          <AccordionItem label="What about other Chromium browsers?">
+          <AccordionItem className="border-b" label="What about other Chromium browsers?">
             <p>
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
               placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
               pellentesque non ut velit.
             </p>
           </AccordionItem>
+        </div>
+        <div className="flex justify-center items-center mt-12">
+          <Button theme="primary" label="More Info" />
         </div>
       </div>
     </div>

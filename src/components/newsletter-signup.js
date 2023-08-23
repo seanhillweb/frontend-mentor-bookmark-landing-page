@@ -4,7 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 
-export default function NewsletterSignupForm() {
+export default function NewsletterSignup() {
   const {
     register,
     handleSubmit,
@@ -44,7 +44,7 @@ export default function NewsletterSignupForm() {
                   name="email"
                   placeholder="Enter your email address"
                   type="text"
-                  className={`z-10 text-sm rounded-md p-3 border-2 focus:ring-transparent ${
+                  className={`z-10 text-sm rounded-md p-3 border-2 focus:ring-inherit ${
                     errors.email
                       ? "border-brand-soft-red hover:border-brand-soft-red focus:border-brand-soft-red"
                       : "border-transparent hover:border-transparent focus:border-transparent"
