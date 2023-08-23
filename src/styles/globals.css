@@ -31,8 +31,8 @@ body {
   content: "";
   z-index: 0;
   @apply absolute;
-  @apply top-20;
-  @apply left-32;
+  @apply top-[20%];
+  @apply left-[20%];
   @apply bottom-0;
   @apply block;
   @apply bg-brand-soft-blue;

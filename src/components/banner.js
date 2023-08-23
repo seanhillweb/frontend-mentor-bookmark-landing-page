@@ -15,7 +15,7 @@ export default function Banner() {
         <div className="flex flex-col md:flex-row items-center">
 
           <div className="flex flex-col flex-1 order-2 md:order-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-medium mb-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mt-12 md:mt-0 mb-8">
               A Simple Bookmark Manager
             </h1>
             <p className="text-brand-grey-blue">
