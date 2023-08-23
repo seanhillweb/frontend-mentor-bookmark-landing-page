@@ -28,7 +28,7 @@ export default function Download() {
   return (
     <div className="w-full bg-white py-20 md:pt-20 md:pb-40">
       <div className="container">
-        <div className="flex flex-col items-center max-w-lg mx-auto">
+        <div className="flex flex-col items-center max-w-xl mx-auto">
           <div className="w-full text-center mb-12">
             <h2 className="text-4xl font-medium mb-8">
               Download the extension

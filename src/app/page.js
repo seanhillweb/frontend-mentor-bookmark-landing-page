@@ -7,6 +7,7 @@
  */
 
 import Banner from "@/components/banner"
+import Features from "@/components/features"
 import Download from "@/components/download"
 import FAQ from "@/components/faq"
 import NewsletterSignup from "@/components/newsletter-signup"
@@ -16,6 +17,7 @@ export default function App() {
   return (
     <main id="main" className="" aria-label="Content">
       <Banner />
+      <Features />
       <Download />
       <FAQ />
       <NewsletterSignup />
