@@ -30,7 +30,7 @@ export default function Banner() {
           </div>
 
           <div className="relative flex-1 order-1 md:order-2">
-            <div className="graphic">
+            <div className="graphic graphic--right">
               <Image src={illustrationHero} alt="" width={657} height={466} />
             </div>
           </div>

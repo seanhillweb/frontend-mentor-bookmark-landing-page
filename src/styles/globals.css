@@ -5,21 +5,19 @@
 :root {
   --foreground-rgb: 37, 43, 70;
   --background-rgb: 255, 255, 255;
-  --font-size: 18px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-rgb: 37, 43, 70;
-    --font-size: 18px;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  font-size: var(--font-size);
+  @apply text-base md:text-lg;
 }
 
 .graphic img {
@@ -31,12 +29,22 @@ body {
   content: "";
   z-index: 0;
   @apply absolute;
-  @apply top-[20%];
-  @apply left-[20%];
-  @apply bottom-0;
   @apply block;
   @apply bg-brand-soft-blue;
   @apply w-screen;
   @apply h-auto;
+}
+
+.graphic--right::after {
+  @apply top-[20%];
+  @apply left-[20%];
+  @apply bottom-0;
   @apply rounded-s-full;
+}
+
+.graphic--left::after {
+  @apply top-[20%];
+  @apply right-[20%];
+  @apply bottom-0;
+  @apply rounded-e-full;
 }
