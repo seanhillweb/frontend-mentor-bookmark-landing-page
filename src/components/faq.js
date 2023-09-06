@@ -4,7 +4,7 @@ import React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import Button from "@/components/button";
 
-const AccordionItem = ({ className="", label, children }) => {
+const AccordionItem = ({ className = "", label, children }) => {
   return (
     <Disclosure as="div" className={`w-full ${className}`}>
       {({ open }) => (
@@ -41,16 +41,16 @@ export default function FAQ() {
   return (
     <div className="w-full bg-white py-20">
       <div className="container">
-        <div className="flex flex-col items-center max-w-xl mx-auto">
-          <div className="w-full text-center mb-12">
-            <h2 className="text-4xl font-medium mb-8">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-brand-grey-blue">
-              Here are some of our FAQs. If you have any other questions
-              you&apos;d like answered please feel free to email us.
-            </p>
-          </div>
+        <div className="w-full max-w-xl mx-auto text-center mb-12">
+          <h2 className="text-4xl font-medium mb-8">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-brand-grey-blue">
+            Here are some of our FAQs. If you have any other questions
+            you&apos;d like answered please feel free to email us.
+          </p>
+        </div>
+        <div className="flex flex-col max-w-xl mx-auto">
           <AccordionItem label="What is Bookmark?">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -76,7 +76,10 @@ export default function FAQ() {
               sollicitudin ex et ultricies bibendum.
             </p>
           </AccordionItem>
-          <AccordionItem className="border-b" label="What about other Chromium browsers?">
+          <AccordionItem
+            className="border-b"
+            label="What about other Chromium browsers?"
+          >
             <p>
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
               placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida

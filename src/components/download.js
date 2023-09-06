@@ -28,20 +28,17 @@ export default function Download() {
   return (
     <div className="w-full bg-white py-20 md:pt-20 md:pb-40">
       <div className="container">
-        <div className="flex flex-col items-center max-w-xl mx-auto">
-          <div className="w-full text-center mb-12">
-            <h2 className="text-4xl font-medium mb-8">
-              Download the extension
-            </h2>
-            <p className="text-brand-grey-blue">
-              We&apos;ve got more browsers in the pipeline. Please do let us
-              know if you&apos;ve got a favourite you&apos;d like us to
-              prioritize.
-            </p>
-          </div>
+        <div className="w-full max-w-xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-medium mb-8">
+            Download the extension
+          </h2>
+          <p className="text-brand-grey-blue">
+            We&apos;ve got more browsers in the pipeline. Please do let us
+            know if you&apos;ve got a favourite you&apos;d like us to
+            prioritize.
+          </p>
         </div>
-
-        <div className="columns-1 md:columns-3 gap-8 max-w-4xl mx-auto">
+        <div className="columns-1 lg:columns-3 gap-8 max-w-sm lg:max-w-4xl mx-auto">
           <Card className="mb-8 md:mb-0">
             <Image
               src={logoChrome}
