@@ -1,17 +1,24 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Disclosure, Transition } from "@headlessui/react";
 import Button from "@/components/button";
+import iconArrow from "@/public/icon-arrow.svg";
 
 const AccordionItem = ({ className = "", label, children }) => {
   return (
     <Disclosure as="div" className={`w-full ${className}`}>
       {({ open }) => (
         <>
-          <Disclosure.Button className="w-full py-4 border-t border-brand-grey-blue/25 text-left hover:text-brand-soft-red focus:text-brand-soft-red ">
+          <Disclosure.Button className="w-full flex justify-between items-center py-4 pr-4 border-t border-brand-grey-blue/25 text-left hover:text-brand-soft-red focus:text-brand-soft-red ">
             {label}
-            {/* TODO: Add icon here, look into SVGR support */}
+            <Image
+              src={iconArrow}
+              alt=""
+              width={18}
+              height={12}
+            />
           </Disclosure.Button>
           <Transition
             show={open}
