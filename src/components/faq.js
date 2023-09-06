@@ -18,6 +18,7 @@ const AccordionItem = ({ className = "", label, children }) => {
               alt=""
               width={18}
               height={12}
+              className="ui-open:transform ui-open:rotate-180"
             />
           </Disclosure.Button>
           <Transition

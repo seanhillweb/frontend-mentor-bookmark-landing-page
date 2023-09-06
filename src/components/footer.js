@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logoBookmark from "@/public/logo-bookmark.svg";
+import logoBookmark from "@/public/logo-bookmark-footer.svg";
 import iconFacebook from "@/public/icon-facebook.svg";
 import iconTwitter from "@/public/icon-twitter.svg";
 import { menu } from "@/data/data";
@@ -16,7 +16,7 @@ export default function Footer() {
       aria-label="Site"
     >
       <div className="container">
-        <div className="flex flex-col md:flex-row items-center py-4">
+        <div className="flex flex-col md:flex-row items-center py-4 gap-x-10">
           <Link href="/">
             <Image
               src={logoBookmark}
