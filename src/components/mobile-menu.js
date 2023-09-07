@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
 import { menu } from "@/data/data";
 import Button from "@/components/button";
+import logoBookmark from "@/public/logo-bookmark-mobile.svg";
 import iconFacebook from "@/public/icon-facebook.svg";
 import iconTwitter from "@/public/icon-twitter.svg";
 import iconHamburger from "@/public/icon-hamburger.svg";
@@ -50,22 +51,31 @@ export default function MobileMenu() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <div className="grow flex flex-col gap-y-8 pt-20 pb-8">
+                <div className="grow flex flex-col gap-y-8 pt-8 pb-8">
                   <Menu.Items className="w-full flex flex-col text-center">
-                    <Menu.Item>
-                      {({ close }) => (
-                        <button onClick={close} className="p-4">
-                          <span className="sr-only">Close menu</span>
-                          <Image
-                            src={iconClose}
-                            alt=""
-                            width={18}
-                            height={15}
-                            aria-hidden={true}
-                          />
-                        </button>
-                      )}
-                    </Menu.Item>
+                    <div className="flex flex-row items-center justify-between pb-8">
+                      <Image
+                        src={logoBookmark}
+                        alt="Bookmark home"
+                        width={148}
+                        height={25}
+                        style={{ fill: "fill-white" }}
+                      />
+                      <Menu.Item>
+                        {({ close }) => (
+                          <button onClick={close} className="p-4">
+                            <span className="sr-only">Close menu</span>
+                            <Image
+                              src={iconClose}
+                              alt=""
+                              width={18}
+                              height={15}
+                              aria-hidden={true}
+                            />
+                          </button>
+                        )}
+                      </Menu.Item>
+                    </div>
                     {menu.map((link) => (
                       <Menu.Item
                         as="a"
