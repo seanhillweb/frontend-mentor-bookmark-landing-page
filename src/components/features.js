@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Summary. Button component.
+ * Summary. Outlines features of the product in a tabbed display.
  *
- * Description. A simple link displayed as a button. This should be used for routing to other pages or locations.
+ * Description. A tab display that showcases three major features of the Bookmark product: Simple, Speedy, and Easy.
  */
 
 import { Tab } from "@headlessui/react";
@@ -30,7 +30,7 @@ const TabPanel1 = () => {
             <Image src={illustrationTab1} alt="" width={536} height={346} />
           </div>
         </div>
-        <div className="flex flex-col flex-1 items-center justify-center lg:items-start text-center lg:text-left md:pl-16 lg:pl-28">
+        <div className="flex flex-col flex-1 items-center justify-center lg:items-start text-center lg:text-left pt-16 md:pt-0 md:pl-16 lg:pl-28">
           <h3 className="text-3xl md:text-4xl font-medium mb-6">
             Bookmark in one click
           </h3>
@@ -55,7 +55,7 @@ const TabPanel2 = () => {
             <Image src={illustrationTab2} alt="" width={478} height={416} />
           </div>
         </div>
-        <div className="flex flex-col flex-1 items-center justify-center lg:items-start text-center lg:text-left md:pl-16 lg:pl-28">
+        <div className="flex flex-col flex-1 items-center justify-center lg:items-start text-center lg:text-left pt-16 md:pt-0 md:pl-16 lg:pl-28">
           <h3 className="text-3xl md:text-4xl font-medium mb-6">
             Intelligent search
           </h3>
@@ -79,7 +79,7 @@ const TabPanel3 = () => {
             <Image src={illustrationTab3} alt="" width={440} height={380} />
           </div>
         </div>
-        <div className="flex flex-col flex-1 items-center justify-center lg:items-start text-center lg:text-left md:pl-16 lg:pl-28">
+        <div className="flex flex-col flex-1 items-center justify-center lg:items-start text-center lg:text-left pt-16 md:pt-0 md:pl-16 lg:pl-28">
           <h3 className="text-3xl md:text-4xl font-medium mb-6">
             Share your bookmarks
           </h3>

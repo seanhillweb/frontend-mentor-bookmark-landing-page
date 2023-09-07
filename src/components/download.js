@@ -1,8 +1,7 @@
 /**
- * Summary. Button component.
- *
- * Description. A simple link displayed as a button. This should be used for routing to other pages or locations.
+ * Summary. Displays compatible browser support in a grid and card layout.
  */
+
 import Image from "next/image";
 import Button from "@/components/button";
 import logoChrome from "@/public/logo-chrome.svg";

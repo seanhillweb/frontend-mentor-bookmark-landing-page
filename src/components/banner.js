@@ -1,7 +1,5 @@
 /**
- * Summary. Button component.
- *
- * Description. A simple link displayed as a button. This should be used for routing to other pages or locations.
+ * Summary. Hero banner.
  */
 
 import Image from "next/image";

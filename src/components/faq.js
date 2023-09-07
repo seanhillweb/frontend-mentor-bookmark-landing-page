@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Summary. An accordion that displays frequently asked questions.
+ */
+
 import React from "react";
 import Image from "next/image";
 import { Disclosure, Transition } from "@headlessui/react";

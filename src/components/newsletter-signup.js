@@ -1,5 +1,11 @@
 "use client";
 
+/**
+ * Summary. A simple newsletter signup form.
+ *
+ * Description. A banner that displays a signup form for users to submit their email to recieve updates from a distributed newsletter.
+ */
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
@@ -33,10 +39,7 @@ export default function NewsletterSignup() {
           >
             <div className="flex flex-col md:flex-row md:items-start gap-4">
               <div className="flex flex-col md:grow">
-                <label
-                  htmlFor="email"
-                  className="sr-only"
-                >
+                <label htmlFor="email" className="sr-only">
                   Email Address
                 </label>
                 <input
@@ -54,15 +57,18 @@ export default function NewsletterSignup() {
                     required: "Can't be blank",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Whoops, make sure it's an email"
-                    }
+                      message: "Whoops, make sure it's an email",
+                    },
                   })}
                 />
                 <ErrorMessage
                   errors={errors}
                   name="email"
                   render={({ message }) => (
-                    <p role="alert" className="z-0 text-left text-white text-xs font-medium italic bg-brand-soft-red rounded-bl-md rounded-br-md px-3 pt-3 pb-[6px] -mt-2">
+                    <p
+                      role="alert"
+                      className="z-0 text-left text-white text-xs font-medium italic bg-brand-soft-red rounded-bl-md rounded-br-md px-3 pt-3 pb-[6px] -mt-2"
+                    >
                       {message}
                     </p>
                   )}
